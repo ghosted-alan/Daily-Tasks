@@ -1,0 +1,46 @@
+package Task4;
+
+class Buffer { 
+    private int data; 
+    private boolean available = false; 
+ 
+    synchronized void produce(int value) { 
+        while(available) { 
+            try { 
+            	wait(); 
+            } catch (InterruptedException ex) {} 
+        } 
+        data = value; 
+        System.out.println("Produced: " + data); 
+        available = true; 
+        notify(); 
+    } 
+ 
+    synchronized void consume() { 
+        while(!available) { 
+            try { 
+            	wait(); 
+            } catch (InterruptedException ex) {} 
+        } 
+        System.out.println("Consumed: " + data); 
+        available = false; 
+        notify(); 
+    } 
+} 
+ 
+public class ProducerConsumer { 
+    public static void main(String[] args) { 
+        Buffer b = new Buffer(); 
+ 
+        Thread producer = new Thread(() -> { 
+            for(int i = 1; i <= 5; i++) b.produce(i); 
+        }); 
+ 
+        Thread consumer = new Thread(() -> { 
+            for(int i = 1; i <= 5; i++) b.consume(); 
+        }); 
+ 
+        producer.start();
+        consumer.start(); 
+    } 
+} 
