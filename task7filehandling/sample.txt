@@ -1,0 +1,4 @@
+Java is fun to learn.
+File I/O is very useful.
+We are learning file operations.
+Practice makes perfect.

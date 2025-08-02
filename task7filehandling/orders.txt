@@ -1,0 +1,39 @@
+Customer: casestudy.Customer@30946e09
+Product: Smartphone, Price: 30000.0
+Product: T-Shirt, Price: 1000.0
+Product: Java Programming, Price: 500.0
+Total after Discount: ₹28350.0
+--------------------------------------------------
+Customer: casestudy.Customer@2cdf8d8a
+Product: Smartphone, Price: 30000.0
+Product: T-Shirt, Price: 1000.0
+Product: Java Programming, Price: 500.0
+Total after Discount: ₹28350.0
+--------------------------------------------------
+----- ORDER -----
+Customer Name: Sumit
+Customer Email: 123@123
+Product: Smartphone | Price: ₹30000.0
+Product: T-Shirt | Price: ₹1000.0
+Product: Java Programming | Price: ₹500.0
+Total after Discount: ₹28350.0
+-----------------------------
+
+----- ORDER -----
+Customer Name: Kiran bir
+Customer Email: 123@123
+Product: Smartphone | Price: ₹30000.0
+Product: T-Shirt | Price: ₹1000.0
+Product: Java Programming | Price: ₹500.0
+Total after Discount: ₹28350.0
+-----------------------------
+
+----- ORDER -----
+Customer Name: abs
+Customer Email: sdsd
+Product: Smartphone | Price: ₹30000.0
+Product: T-Shirt | Price: ₹1000.0
+Product: Java Programming | Price: ₹500.0
+Total after Discount: ₹28350.0
+-----------------------------
+
